@@ -81,19 +81,6 @@
             </StackLayout>
 
 
-            <StackLayout Orientation="Horizontal"
-                         Spacing="290">
-
-                <Button Text="TOP"
-                        Clicked="Button_Clicked"/>
-
-                <Button Text="記録"
-                        Clicked="Button_Clicked"/>
-
-                <Button Text="ストップウォッチ"
-                        Clicked="Button_Clicked"/>
-
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
