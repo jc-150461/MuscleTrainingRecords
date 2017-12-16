@@ -37,31 +37,34 @@
             <StackLayout Orientation="Horizontal"
                          Spacing="10">
                 <!--横に表示-->
+                <StackLayout HorizontalOptions="EndAndExpand"
 
 
                 <Label Text="前回比　体重(kg)" 
                        FontSize="Medium"
                        WidthRequest="130"/>
 
-                <Entry x:Name="GBWeight"
+                    <Entry x:Name="GBWeight"
                        WidthRequest="130"
                        Text="             "/>
 
-                <Label Text="体脂肪(%)"
+                    <Label Text="体脂肪(%)"
                        FontSize="Medium"
                        WidthRequest="130"/>
 
-                <Entry x:Name="GBfat"
+                    <Entry x:Name="GBfat"
                        WidthRequest="130"
                        Text="             "/>
+                </StackLayout>
 
             </StackLayout>
 
             <StackLayout Orientation="Vertical"
                      Spacing="10" >
+                <!--縦に表示-->
 
-                <Label Text="日付" 
-                       FontSize="Medium"/>
+                    <Label Text="日付" 
+                       FontSize="Large"/>
 
                 <DatePicker Format="D" 
                             WidthRequest="200"
@@ -77,7 +80,7 @@
 
 
                 <Label Text="体重(kg)"
-                       FontSize="Medium"/>
+                       FontSize="Large"/>
 
                 <Entry x:Name="BWeight"
                        WidthRequest="200"
@@ -93,7 +96,7 @@
                      Spacing="10" >
 
                 <Label Text="体脂肪(%)"
-                       FontSize="Medium"/>
+                       FontSize="Large"/>
 
                 <Entry x:Name="Bfat"
                        WidthRequest="200"
