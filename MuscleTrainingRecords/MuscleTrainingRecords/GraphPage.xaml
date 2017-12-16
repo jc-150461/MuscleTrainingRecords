@@ -9,7 +9,7 @@
     
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Spacing="10" BackgroundColor="DarkSlateGray">
+                     Spacing="10" >
 
 
             <oxy:PlotView Model="{Binding Model}"
@@ -59,7 +59,7 @@
 
                 <DatePicker Format="D" 
                             WidthRequest="50"
-                            HorizontalOptions="EndAndExpand"/>
+                            HorizontalOptions="CenterAndExpand"/>
 
             </StackLayout>
 
@@ -75,7 +75,7 @@
                 <Entry x:Name="BWeight"
                        WidthRequest="50"
                        Text="             "
-                       HorizontalOptions="EndAndExpand"/>
+                       HorizontalOptions="CenterAndExpand"/>
 
             </StackLayout>
 
@@ -90,7 +90,7 @@
                 <Entry x:Name="Bfat"
                        WidthRequest="50"
                        Text="             "
-                       HorizontalOptions="EndAndExpand"/>
+                       HorizontalOptions="CenterAndExpand"/>
 
             </StackLayout>
 
