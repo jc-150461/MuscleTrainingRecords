@@ -84,7 +84,7 @@
                        FontSize="100"
                        TextColor="Orange"/>
 
-                <Label Text="kgです"
+                <Label Text="   kgです"
                        FontSize="Large"/>
 
             </StackLayout>
