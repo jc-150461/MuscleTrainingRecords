@@ -4,31 +4,32 @@
              xmlns:local="clr-namespace:MuscleTrainingRecords"
              x:Class="MuscleTrainingRecords.MainPage">
 
-    <NavigationPage Title="記録">
+    <NavigationPage Title="記録" Icon="contract.png">　 <!--下タブのタイトル-->
+
         <x:Arguments>
             <local:RecordListPage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="TraningLog">
+    <NavigationPage Title="トレーニング履歴" Icon="notebook.png">
         <x:Arguments>
             <local:TrainingLogPage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="メニュー一覧">
+    <NavigationPage Title="メニュー一覧" Icon="dumbbell-variant-outline.png">
         <x:Arguments>
             <local:MenuPage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="ボディー統計">
+    <NavigationPage Title="ボディー統計" Icon="graph.png">
         <x:Arguments>
             <local:GraphPage />
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="RM計算">
+    <NavigationPage Title="RM計算" Icon="calculator.png">
         <x:Arguments>
             <local:RMPage />
         </x:Arguments>
