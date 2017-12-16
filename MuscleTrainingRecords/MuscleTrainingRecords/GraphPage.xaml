@@ -13,9 +13,8 @@
 
 
             <oxy:PlotView Model="{Binding Model}"
-                   VerticalOptions="FillAndExpand"
-                   HorizontalOptions="FillAndExpand"
-                          BackgroundColor="DarkGray">
+                   VerticalOptions="StartAndExpand"
+                   BackgroundColor="Chartreuse">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
