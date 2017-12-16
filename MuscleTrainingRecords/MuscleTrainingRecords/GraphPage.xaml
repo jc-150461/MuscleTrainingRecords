@@ -4,10 +4,107 @@
              x:Class="MuscleTrainingRecords.GraphPage"
              Title="ボディー統計">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical"
+                     Spacing="25">
+
+            <Label Text="   "/>
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="300">
+
+                <Button Text="戻る"
+                        Clicked="Button_Clicked"/>
+
+                <Label Text="ボディー統計"
+                       FontSize="30"/>
+
+                <Button Text="保存"
+                        Clicked="Button_Clicked"/>
+
+            </StackLayout>
+
+            <oxy:PlotView Model="{Binding Model}"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand">
+                <oxy:PlotView.BindingContext>
+                    <local:LineChart />
+                </oxy:PlotView.BindingContext>
+            </oxy:PlotView>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="75">
+
+                <Label Text="前回比　体重(kg)" 
+                       FontSize="25"
+                       WidthRequest="130"/>
+
+                <Entry x:Name="GWeight"
+                       WidthRequest="120"
+                       Text="             "/>
+
+                <Label Text="体脂肪 (%)"
+                       FontSize="20"
+                       WidthRequest="110"/>
+
+                <Entry x:Name="Gbfat"
+                       WidthRequest="120"
+                       Text="             "/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="100">
+
+                <Label Text="日付" 
+                       FontSize="30"/>
+
+                <DatePicker Format="D" 
+                            WidthRequest="100"/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="40">
+
+                <Label Text="体重(kg)"
+                       FontSize="30"/>
+
+                <Entry x:Name="Weight"
+                       WidthRequest="100"
+                       Text="             "/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="30">
+
+                <Label Text="体脂肪(%)"
+                       FontSize="30"/>
+
+                <Entry x:Name="Bfat"
+                       WidthRequest="100"
+                       Text="             "/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="290">
+
+                <Button Text="TOP"
+                        Clicked="Button_Clicked"/>
+
+                <Button Text="記録"
+                        Clicked="Button_Clicked"/>
+
+                <Button Text="ストップウォッチ"
+                        Clicked="Button_Clicked"/>
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

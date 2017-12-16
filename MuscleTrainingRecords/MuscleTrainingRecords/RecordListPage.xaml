@@ -5,13 +5,12 @@
              Title="記録" > <!--上タブタイトル-->
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to RecordListPage!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
 
+
+           
 
             <Button  x:Name="RecordPageButton" Text="メニュー追加" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" />
-
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
