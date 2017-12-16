@@ -83,10 +83,14 @@
                        WidthRequest="200"
                        FontSize="100"
                        TextColor="Orange"/>
+
+
+                <Label Text="kgです"
+                       FontSize="Large"
+                       WidthRequest="200"
+                       VerticalOptions="CenterAndExpand"/> <!--ここ良い配置できない-->
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center">
 
                     <Label Text="   kgです"
                        FontSize="Large"/>
