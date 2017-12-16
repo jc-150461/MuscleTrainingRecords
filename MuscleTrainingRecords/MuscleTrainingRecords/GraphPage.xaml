@@ -12,20 +12,14 @@
             <Label Text="   "/>
 
 
-
-            <oxy:PlotView.BindingContext>
-            <local:LineChart />
-            </oxy:PlotView.BindingContext>
-
-           
-            <Grid>
-                <oxy:Plot>
-                    <oxy:Plot.Series >
-                        <oxy:LineSeries ItemsSource="{Binding DataList}" />
-                    </oxy:Plot.Series>
-                </oxy:Plot>
-                
-            </Grid>
+            <oxy:PlotView Model="{Binding Model}"
+                   VerticalOptions="FillAndExpand"
+                   HorizontalOptions="FillAndExpand"
+                          BackgroundColor="DarkGray">
+                <oxy:PlotView.BindingContext>
+                    <local:LineChart />
+                </oxy:PlotView.BindingContext>
+            </oxy:PlotView>
 
 
 
