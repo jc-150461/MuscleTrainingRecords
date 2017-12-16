@@ -9,7 +9,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <BoxView x:Name="RecordPageButton" Color="Aqua" VerticalOptions="EndAndExpand"/>
+            
             <Button  x:Name="RecordPageButton" Text="メニュー追加"/>
 
         </StackLayout>
