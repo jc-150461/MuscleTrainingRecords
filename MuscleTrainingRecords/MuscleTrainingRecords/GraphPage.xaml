@@ -22,12 +22,12 @@
                 
             </oxy:PlotView>
 
-            <
+           
 
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="50">
+                         Spacing="25">
 
                 <Label Text="前回比　体重(kg)" 
                        FontSize="Medium"
@@ -49,7 +49,7 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="50">
+                         Spacing="25">
 
                 <Label Text="日付" 
                        FontSize="Medium"/>
@@ -61,7 +61,7 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="50">
+                         Spacing="25">
 
                 <Label Text="体重(kg)"
                        FontSize="Medium"/>
@@ -74,7 +74,7 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="50">
+                         Spacing="25">
 
                 <Label Text="体脂肪(%)"
                        FontSize="Medium"/>
