@@ -21,19 +21,19 @@
 
 
             <StackLayout Orientation="Horizontal">
-                <Label Text="重さ(kg)" 
-                       FontSize="50"/>
+                <Label Text="重量(kg)" 
+                       FontSize="Large"/>
                 <Entry x:Name="Weight"
-                       Text=""
-                       WidthRequest="50"/>
+                       Text="重量を入力してください"
+                       WidthRequest="130"/>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
 
                 <Label Text="回数"
-                       FontSize="50"/>
+                       FontSize="Large"/>
 
-                <Picker x:Name="count" Title="数字を入力してください">
+                <Picker x:Name="count" Title="数字を選択してください">
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
@@ -51,24 +51,25 @@
             </StackLayout>
 
             <Button Text="計算"
-                    FontSize="50"
-                    Clicked="Button_Clicked"/>
+                    Clicked="Button_Clicked"
+                    BackgroundColor="MediumOrchid" TextColor="Wheat" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <!--<Button  x:Name="RecordPageButton" Text="メニュー追加" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" /> -->
 
             <Label Text="推定RM"
-                   FontSize="50"
+                   FontSize="Large"
                    FontAttributes="Bold"
                    BackgroundColor="Silver"
                    HorizontalOptions="Center"/>
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="1RM"
-                       FontSize="50"/>
+                       FontSize="Large"/>
                 <Label Text="重量"
-                       FontSize="50"/>
+                       FontSize="Large"/>
 
                 <Label x:Name="RM"
                        Text="　　"
-                       WidthRequest="50"/>
+                       WidthRequest="130"/>
 
             </StackLayout>
 
