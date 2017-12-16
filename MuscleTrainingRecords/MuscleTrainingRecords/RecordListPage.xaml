@@ -2,12 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MuscleTrainingRecords.RecordListPage"
-             Title="記録">
+             Title="記録" > <!--上タブタイトル-->
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to RecordListPage!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <BoxView x:Name="RecordPageButton" Color="Aqua" VerticalOptions="EndAndExpand"/>
+            <Button  x:Name="RecordPageButton" Text="メニュー追加"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
