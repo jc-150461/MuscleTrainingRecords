@@ -13,6 +13,7 @@ namespace MuscleTrainingRecords
 	public partial class GraphPage : ContentPage
 	{
 
+
 		public GraphPage ()
 		{
 			InitializeComponent ();
