@@ -41,8 +41,7 @@
 
                 <Label Text="体脂肪(%)"
                        FontSize="Medium"
-                       WidthRequest="130"
-                       />
+                       WidthRequest="130"/>
 
                 <Entry x:Name="GBfat"
                        WidthRequest="130"
@@ -55,7 +54,7 @@
                          Spacing="10">
                 <!--横に表示-->
 
-                <Label Text="日付    " 
+                <Label Text="日付　　　" 
                        FontSize="Medium"/>
 
                 <DatePicker Format="D" 
@@ -69,7 +68,7 @@
                 <!--横に表示-->
                 
 
-                <Label Text="体重(kg) "
+                <Label Text="体重(kg)　"
                        FontSize="Medium"/>
 
                 <Entry x:Name="BWeight"
