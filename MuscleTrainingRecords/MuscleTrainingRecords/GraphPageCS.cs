@@ -7,10 +7,11 @@ using Xamarin.Forms;
 
 namespace MuscleTrainingRecords
 {
-    public class GraphPageCS : ContentPage
-    {
-        public GraphPageCS()
-        {
+	public class GraphPageCS : ContentPage
+	{
+		public GraphPageCS ()
+		{
+
             Title = "ボディー統計";
             Content = new StackLayout
             {
@@ -19,9 +20,10 @@ namespace MuscleTrainingRecords
                         Text = "Welcome to GraphPage!",
                         HorizontalOptions = LayoutOptions.Center,
                         VerticalOptions = LayoutOptions.CenterAndExpand
-                    }
-                },
+                    },
+                }
             };
         }
     }
+}
 }

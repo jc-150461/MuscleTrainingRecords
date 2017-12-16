@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace MuscleTrainingRecords
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GraphPage : ContentPage
+	public partial class RMPage : ContentPage
 	{
-		public GraphPage ()
+		public RMPage ()
 		{
 			InitializeComponent ();
 		}

@@ -7,10 +7,11 @@ using Xamarin.Forms;
 
 namespace MuscleTrainingRecords
 {
-    public class MenuPageCS : ContentPage
-    {
-        public MenuPageCS()
-        {
+	public class MenuPageCS : ContentPage
+	{
+		public MenuPageCS ()
+		{
+
             Title = "メニュー一覧";
             Content = new StackLayout
             {
@@ -19,8 +20,8 @@ namespace MuscleTrainingRecords
                         Text = "Welcome to MenuPage!",
                         HorizontalOptions = LayoutOptions.Center,
                         VerticalOptions = LayoutOptions.CenterAndExpand
-                    }
-                },
+                    },
+                }
             };
         }
     }
