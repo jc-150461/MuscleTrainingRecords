@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using OxyPlot;
 using OxyPlot.Series;
+using OxyPlot.Axes;
 
 
 namespace MuscleTrainingRecords

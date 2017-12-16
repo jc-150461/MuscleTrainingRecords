@@ -4,83 +4,89 @@
              x:Class="MuscleTrainingRecords.GraphPage"
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              xmlns:local="clr-namespace:MuscleTrainingRecords"
+             
              Title="ボディー統計">
+    
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
                      Spacing="25">
-
-            <Label Text="   "/>
 
 
             <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
-                   BackgroundColor="DarkSlateGray">
+                   BackgroundColor="Snow">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
+                
             </oxy:PlotView>
 
-
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Left" AxislineColor="Gray" 
+                                MajorGridlineStyle="Solid" MajorGridlineColor="Gray"
+                                MinorGridlineStyle="Dot" MinorGridlineColor="Gray" 
+                                TicklineColor="Gray" TextColor="Gray" />
+            </oxy:Plot.Axes>
 
 
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="75">
+                         Spacing="50">
 
                 <Label Text="前回比　体重(kg)" 
-                       FontSize="25"
+                       FontSize="Medium"
                        WidthRequest="130"/>
 
-                <Entry x:Name="GWeight"
-                       WidthRequest="120"
+                <Entry x:Name="BWeight"
+                       WidthRequest="130"
                        Text="             "/>
-
-                <Label Text="体脂肪 (%)"
-                       FontSize="20"
-                       WidthRequest="110"/>
-
-                <Entry x:Name="Gbfat"
-                       WidthRequest="120"
-                       Text="             "/>
-
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal"
-                         Spacing="100">
-
-                <Label Text="日付" 
-                       FontSize="30"/>
-
-                <DatePicker Format="D" 
-                            WidthRequest="100"/>
-
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal"
-                         Spacing="40">
-
-                <Label Text="体重(kg)"
-                       FontSize="30"/>
-
-                <Entry x:Name="Weight"
-                       WidthRequest="100"
-                       Text="             "/>
-
-            </StackLayout>
-
-
-            <StackLayout Orientation="Horizontal"
-                         Spacing="30">
 
                 <Label Text="体脂肪(%)"
-                       FontSize="30"/>
+                       FontSize="Medium"
+                       WidthRequest="130"/>
 
                 <Entry x:Name="Bfat"
-                       WidthRequest="100"
+                       WidthRequest="130"
+                       Text="             "/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="50">
+
+                <Label Text="日付" 
+                       FontSize="Medium"/>
+
+                <DatePicker Format="D" 
+                            WidthRequest="130"/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="50">
+
+                <Label Text="体重(kg)"
+                       FontSize="Medium"/>
+
+                <Entry x:Name="Weight"
+                       WidthRequest="130"
+                       Text="             "/>
+
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal"
+                         Spacing="50">
+
+                <Label Text="体脂肪(%)"
+                       FontSize="Medium"/>
+
+                <Entry x:Name="Bfat"
+                       WidthRequest="130"
                        Text="             "/>
 
             </StackLayout>
