@@ -27,13 +27,13 @@ namespace MuscleTrainingRecords
                 Double dCount = Double.Parse(s);
                 if (dCount == null)
                 {
-                    DisplayAlert("", "入力してください。", "OK");
+                    DisplayAlert("", "回数を選択してください。", "OK");
                     //RM.Text = "入力してください。";
                 }
 
                 else if (w == null)
                 {
-                    DisplayAlert("", "入力してください。", "OK");
+                    DisplayAlert("", "重量を入力してください。", "OK");
                     //Weight.Text = "入力してください。";
                 }
 

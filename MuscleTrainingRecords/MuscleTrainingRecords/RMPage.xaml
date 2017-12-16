@@ -52,7 +52,7 @@
 
             <Button Text="計算"
                     Clicked="Button_Clicked"
-                    BackgroundColor="MediumOrchid" TextColor="Wheat" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                    BackgroundColor="MediumOrchid" TextColor="Wheat" FontSize="Large" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
             <!--<Button  x:Name="RecordPageButton" Text="メニュー追加" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" /> -->
 
             <Label Text="推定RM"
