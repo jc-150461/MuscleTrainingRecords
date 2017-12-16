@@ -15,18 +15,25 @@
             <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
-                   BackgroundColor="DarkGray">
-                <oxy:PlotView.BindingContext>
-                    <local:LineChart />
-                </oxy:PlotView.BindingContext>
-                
-            </oxy:PlotView>
-            <oxy:Plot.Axes>
-                <oxy:LinearAxis Position="Left" AxislineColor="Gray" 
+                   BackgroundColor="DarkGray"
+                   >
+                <oxy:Plot.Axes>
+                    <oxy:Liner Position="Left" AxislineColor="Gray" 
                                 MajorGridlineStyle="Solid" MajorGridlineColor="Gray"
                                 MinorGridlineStyle="Dot" MinorGridlineColor="Gray" 
                                 TicklineColor="Gray" TextColor="Gray" />
-            </oxy:Plot.Axes>
+                </oxy:Plot.Axes>
+
+                <oxy:PlotView.BindingContext>
+                    <local:LineChart />
+                </oxy:PlotView.BindingContext>
+            </oxy:PlotView>
+
+
+
+
+
+
 
 
             <StackLayout Orientation="Horizontal"
