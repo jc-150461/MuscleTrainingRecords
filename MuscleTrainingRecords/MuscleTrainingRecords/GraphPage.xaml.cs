@@ -12,6 +12,7 @@ namespace MuscleTrainingRecords
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class GraphPage : ContentPage
 	{
+
 		public GraphPage ()
 		{
 			InitializeComponent ();
