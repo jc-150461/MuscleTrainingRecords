@@ -92,11 +92,7 @@
             </StackLayout>
 
 
-                    <Label Text="   kgです"
-                       FontSize="Large"/>
-                    
-
-            </StackLayout>
+            
 
         </StackLayout>
     </ContentPage.Content>
