@@ -54,12 +54,13 @@
                          Spacing="10">
                 <!--横に表示-->
 
-                <Label Text="日付　　　" 
+                <Label Text="日付      " 
                        FontSize="Medium"/>
 
                 <DatePicker Format="D" 
-                            WidthRequest="50"
-                            HorizontalOptions="CenterAndExpand"/>
+                            WidthRequest="200"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"/>
 
             </StackLayout>
 
@@ -67,15 +68,16 @@
             <StackLayout Orientation="Horizontal"
                          Spacing="10">
                 <!--横に表示-->
-                
 
-                <Label Text="体重(kg)　"
+
+                <Label Text="体重(kg)  "
                        FontSize="Medium"/>
 
                 <Entry x:Name="BWeight"
-                       WidthRequest="50"
+                       WidthRequest="180"
                        Text="             "
-                       HorizontalOptions="CenterAndExpand"/>
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
 
             </StackLayout>
 
@@ -84,13 +86,14 @@
                          Spacing="10">
                 <!--横に表示-->
 
-                <Label Text="体脂肪(%)"
+                <Label Text="体脂肪(%)   "
                        FontSize="Medium"/>
 
                 <Entry x:Name="Bfat"
-                       WidthRequest="50"
+                       WidthRequest="150"
                        Text="             "
-                       HorizontalOptions="CenterAndExpand"/>
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
 
             </StackLayout>
 
