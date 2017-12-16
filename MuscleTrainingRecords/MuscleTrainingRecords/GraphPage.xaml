@@ -42,7 +42,7 @@
                 <Label Text="体脂肪(%)"
                        FontSize="Medium"
                        WidthRequest="130"
-                       HorizontalOptions=""/>
+                       />
 
                 <Entry x:Name="GBfat"
                        WidthRequest="130"
