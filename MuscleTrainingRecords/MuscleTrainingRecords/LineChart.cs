@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 using OxyPlot;
-using OxyPlot.Series;
 
 
 namespace MuscleTrainingRecords
 {
     class LineChart
     {
-        public PlotModel Model { get; private set; }
+        //public PlotModel Model { get; private set; }
 
         public LineChart()
         {
-            this.Model = new PlotModel { Title = "" };
+            /*this.Model = new PlotModel { Title = "" };
 
             var X_line = new LineSeries();
             X_line.Color = OxyColors.Red;
@@ -33,6 +28,31 @@ namespace MuscleTrainingRecords
             Y_line.Points.Add(new DataPoint(2, 0));
             Y_line.Points.Add(new DataPoint(3, 6));
             Model.Series.Add(Y_line);
+            */
+           /************************************ここからついか**************************************/
+            DataList1 = new List<DataPoint>
+            {
+                {new DataPoint(0, 0)},
+                {new DataPoint(2, 4)},
+                {new DataPoint(5, 8)},
+                {new DataPoint(8, 3)},
+                {new DataPoint(12, 5)},
+            };
+
+
+            DataList2 = new List<DataPoint>
+            {
+                {new DataPoint(0, 0)},
+                {new DataPoint(2, 4)},
+                {new DataPoint(5, 8)},
+                {new DataPoint(8, 3)},
+                {new DataPoint(12, 5)},
+            };
         }
+
+         public List<DataPoint> DataList1 { get; }
+         public List<DataPoint> DataList2 { get; }
+        /************************************ここからまで**************************************/
     }
 }
+
