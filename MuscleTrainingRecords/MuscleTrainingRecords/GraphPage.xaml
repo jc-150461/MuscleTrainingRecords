@@ -39,7 +39,7 @@
                        FontSize="Medium"
                        WidthRequest="130"/>
 
-                <Entry x:Name="BWeight"
+                <Entry x:Name="GBWeight"
                        WidthRequest="130"
                        Text="             "/>
 
@@ -47,7 +47,7 @@
                        FontSize="Medium"
                        WidthRequest="130"/>
 
-                <Entry x:Name="Bfat"
+                <Entry x:Name="GBfat"
                        WidthRequest="130"
                        Text="             "/>
 
@@ -72,7 +72,7 @@
                 <Label Text="体重(kg)"
                        FontSize="Medium"/>
 
-                <Entry x:Name="Weight"
+                <Entry x:Name="BWeight"
                        WidthRequest="130"
                        Text="             "/>
 
