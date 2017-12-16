@@ -10,9 +10,17 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
                      Spacing="10" >
+            <StackLayout.Margin>
+                
+                <!-- iOSはトップに 20 の余白が必要 -->
+                <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0"
+                     Android="0, 0, 0, 0"
+                     WinPhone="0, 0, 0, 0" />
+            </StackLayout.Margin>
 
-
-            <oxy:PlotView Model="{Binding Model}"
+            <!--Graph-->
+                <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
                    BackgroundColor="Snow">
@@ -54,13 +62,14 @@
                          Spacing="10">
                 <!--横に表示-->
 
-                <Label Text="日付      " 
+                <Label Text="日付" 
                        FontSize="Medium"/>
 
                 <DatePicker Format="D" 
-                            WidthRequest="200"
+                            WidthRequest="160"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
+                            VerticalOptions="Center"
+                            Margin="30"/>
 
             </StackLayout>
 
@@ -70,30 +79,33 @@
                 <!--横に表示-->
 
 
-                <Label Text="体重(kg)  "
+                <Label Text="体重(kg)"
                        FontSize="Medium"/>
 
                 <Entry x:Name="BWeight"
-                       WidthRequest="180"
+                       WidthRequest="160"
                        Text="             "
                        HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Margin="20"/>
 
             </StackLayout>
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="10">
+                         Spacing="10"
+                         >
                 <!--横に表示-->
 
-                <Label Text="体脂肪(%)   "
+                <Label Text="体脂肪(%)"
                        FontSize="Medium"/>
 
                 <Entry x:Name="Bfat"
-                       WidthRequest="150"
+                       WidthRequest="160"
                        Text="             "
                        HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
+                       VerticalOptions="Center"
+                       Margin="20"/>
 
             </StackLayout>
 
