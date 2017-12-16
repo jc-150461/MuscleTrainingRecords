@@ -14,11 +14,19 @@
 
             <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
-                   HorizontalOptions="FillAndExpand">
+                   HorizontalOptions="FillAndExpand"
+                   BackgroundColor="DarkGray">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
+                
             </oxy:PlotView>
+            <oxy:Plot.Axes>
+                <oxy:LinearAxis Position="Left" AxislineColor="Gray" 
+                                MajorGridlineStyle="Solid" MajorGridlineColor="Gray"
+                                MinorGridlineStyle="Dot" MinorGridlineColor="Gray" 
+                                TicklineColor="Gray" TextColor="Gray" />
+            </oxy:Plot.Axes>
 
 
             <StackLayout Orientation="Horizontal"
