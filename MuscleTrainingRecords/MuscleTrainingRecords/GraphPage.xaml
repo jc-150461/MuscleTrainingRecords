@@ -58,7 +58,8 @@
                        FontSize="Medium"/>
 
                 <DatePicker Format="D" 
-                            WidthRequest="130"/>
+                            WidthRequest="130"
+                            HorizontalOptions="FillAndExpand"/>
 
             </StackLayout>
 
@@ -73,7 +74,8 @@
 
                 <Entry x:Name="BWeight"
                        WidthRequest="130"
-                       Text="             "/>
+                       Text="             "
+                       HorizontalOptions="FillAndExpand"/>
 
             </StackLayout>
 
@@ -87,7 +89,8 @@
 
                 <Entry x:Name="Bfat"
                        WidthRequest="130"
-                       Text="             "/>
+                       Text="             "
+                       HorizontalOptions="FillAndExpand"/>
 
             </StackLayout>
 
