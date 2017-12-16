@@ -9,7 +9,7 @@
     
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Spacing="25">
+                     Spacing="10">
 
 
             <oxy:PlotView Model="{Binding Model}"
@@ -22,12 +22,14 @@
                 
             </oxy:PlotView>
 
-           
+
 
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="25">
+                         Spacing="10">
+                <!--横に表示-->
+
 
                 <Label Text="前回比　体重(kg)" 
                        FontSize="Medium"
@@ -39,7 +41,8 @@
 
                 <Label Text="体脂肪(%)"
                        FontSize="Medium"
-                       WidthRequest="130"/>
+                       WidthRequest="130"
+                       HorizontalOptions=""/>
 
                 <Entry x:Name="GBfat"
                        WidthRequest="130"
@@ -49,9 +52,10 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="25">
+                         Spacing="10">
+                <!--横に表示-->
 
-                <Label Text="日付" 
+                <Label Text="日付    " 
                        FontSize="Medium"/>
 
                 <DatePicker Format="D" 
@@ -61,9 +65,11 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="25">
+                         Spacing="10">
+                <!--横に表示-->
+                
 
-                <Label Text="体重(kg)"
+                <Label Text="体重(kg) "
                        FontSize="Medium"/>
 
                 <Entry x:Name="BWeight"
@@ -74,7 +80,8 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="25">
+                         Spacing="10">
+                <!--横に表示-->
 
                 <Label Text="体脂肪(%)"
                        FontSize="Medium"/>
