@@ -22,13 +22,7 @@
                 
             </oxy:PlotView>
 
-            <oxy:Plot.Axes>
-                <oxy:LinearAxis Position="Left" AxislineColor="Gray" 
-                                MajorGridlineStyle="Solid" MajorGridlineColor="Gray"
-                                MinorGridlineStyle="Dot" MinorGridlineColor="Gray" 
-                                TicklineColor="Gray" TextColor="Gray" />
-            </oxy:Plot.Axes>
-
+            <
 
 
 
