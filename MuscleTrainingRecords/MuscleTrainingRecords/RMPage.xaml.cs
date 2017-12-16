@@ -108,7 +108,7 @@ namespace MuscleTrainingRecords
                 }
             }
 
-            catch (Exception e)
+            catch (Exception )
             {
                 DisplayAlert("", "入力してください。", "OK");
             }

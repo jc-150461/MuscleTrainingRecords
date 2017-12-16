@@ -37,10 +37,10 @@
             <StackLayout Orientation="Horizontal"
                          Spacing="10">
                 <!--横に表示-->
-                <StackLayout HorizontalOptions="EndAndExpand"
+                <StackLayout HorizontalOptions="EndAndExpand">
 
 
-                <Label Text="前回比　体重(kg)" 
+                    <Label Text="前回比　体重(kg)" 
                        FontSize="Medium"
                        WidthRequest="130"/>
 
