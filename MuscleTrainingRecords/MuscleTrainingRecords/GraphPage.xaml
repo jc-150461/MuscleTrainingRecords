@@ -23,7 +23,7 @@
                 <oxy:PlotView Model="{Binding Model}"
                    VerticalOptions="FillAndExpand"
                    HorizontalOptions="FillAndExpand"
-                   BackgroundColor="Snow">
+                   BackgroundColor="#FF1A1A1A">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
@@ -35,9 +35,11 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         Spacing="10">
+                         Spacing="10"
+                         HorizontalOptions="End">
+            
                 <!--横に表示-->
-                <StackLayout HorizontalOptions="EndAndExpand">
+                
 
 
                     <Label Text="前回比　体重(kg)" 
@@ -55,7 +57,7 @@
                     <Entry x:Name="GBfat"
                        WidthRequest="130"
                        Text="             "/>
-                </StackLayout>
+                
 
             </StackLayout>
 
@@ -64,7 +66,7 @@
                 <!--縦に表示-->
 
                     <Label Text="日付" 
-                       FontSize="Large"/>
+                       FontSize="Medium"/>
 
                 <DatePicker Format="D" 
                             WidthRequest="200"
@@ -80,7 +82,7 @@
 
 
                 <Label Text="体重(kg)"
-                       FontSize="Large"/>
+                       FontSize="Medium"/>
 
                 <Entry x:Name="BWeight"
                        WidthRequest="200"
@@ -96,7 +98,7 @@
                      Spacing="10" >
 
                 <Label Text="体脂肪(%)"
-                       FontSize="Large"/>
+                       FontSize="Medium"/>
 
                 <Entry x:Name="Bfat"
                        WidthRequest="200"
