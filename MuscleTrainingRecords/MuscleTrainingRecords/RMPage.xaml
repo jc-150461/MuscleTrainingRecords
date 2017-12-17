@@ -77,7 +77,7 @@
                  -->
              </StackLayout>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center"
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center">
 
                 <Label x:Name="RM"
