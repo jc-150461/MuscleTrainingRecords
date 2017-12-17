@@ -35,7 +35,7 @@
                 <Label Text="回数"
                        FontSize="Large"/>
 
-                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="130" Margin="30">
+                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="130" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
@@ -76,7 +76,7 @@
              </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center">
+                   VerticalOptions="CenterAndExpand">
 
                 <Label x:Name="RM"
                        Text="　　"
@@ -87,7 +87,7 @@
 
                 <Label Text="kgです"
                        FontSize="Large"
-                       WidthRequest="200"
+                      
                        VerticalOptions="CenterAndExpand"/> <!--ここ良い配置できない-->
             </StackLayout>
 
