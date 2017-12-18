@@ -27,7 +27,6 @@
                 <Entry x:Name="Weight"
                        Text="重量を入力してください"
                        WidthRequest="130"
-                       
                        />
             </StackLayout>
 
@@ -81,14 +80,14 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center">
 
-                <Label x:Name="RM     "
-                       Text="　　"
+                <Label x:Name="RM"
+                       Text="　　   "
                        WidthRequest="200"
                        FontSize="100"
                        TextColor="Orange"/>
 
 
-                <Label Text=" kgです"
+                <Label Text="       kgです"
                        FontSize="Large"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="CenterAndExpand"
