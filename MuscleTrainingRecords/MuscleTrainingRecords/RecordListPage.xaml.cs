@@ -16,5 +16,9 @@ namespace MuscleTrainingRecords
         {
             InitializeComponent();
         }
+        private void RecordListButton(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MenuPage());
+        }
     }
 }
