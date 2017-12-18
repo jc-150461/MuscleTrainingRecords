@@ -27,7 +27,7 @@
                 <Entry x:Name="Weight"
                        Text="重量を入力してください"
                        WidthRequest="130"
-                       Keyboard="Numeric"
+                       
                        />
             </StackLayout>
 
