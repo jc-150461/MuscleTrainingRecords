@@ -96,7 +96,23 @@
             </StackLayout>
 
 
-            
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="EndAndExpand"
+                         VerticalOptions="EndAndExpand">
+
+                <Label Text="1RMとは"
+                       TextColor="Red"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+                <Label
+                    Text="挙上できる最大の重量、すなわちトレーニングで扱うことが可能となるMAXの重さを示す言葉。 尚、１ＲＭの「１」とは、「１回」につき最大で挙上することができる重量を指す。 同様に例えば４ＲＭとなれば当然4回まで挙上が可能な重量(ウエイト)ということになる。"
+                    
+                    FontSize="Medium"/>
+            </StackLayout>
+
+
+
+
 
         </StackLayout>
     </ContentPage.Content>
