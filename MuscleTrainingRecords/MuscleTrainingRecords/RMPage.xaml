@@ -26,7 +26,7 @@
                        FontSize="Large"/>
                 <Entry x:Name="Weight" Placeholder="重量を入力してください"
                                         
-                       WidthRequest="130"
+                       WidthRequest="250"
                        />
             </StackLayout>
 
@@ -37,7 +37,7 @@
                        FontSize="Large"
                        />
 
-                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="130" >
+                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
