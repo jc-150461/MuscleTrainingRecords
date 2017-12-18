@@ -87,7 +87,7 @@
                 <Entry x:Name="BWeight"
                        WidthRequest="200"
                        Placeholder="体重を入力してください"
-                       Text="                     "
+                       
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        Margin="30"/>
@@ -104,7 +104,7 @@
                 <Entry x:Name="Bfat"
                        WidthRequest="200"
                         Placeholder="体脂肪を入力してください"
-                       Text="　　　　　　　　　"
+                       
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        Margin="30"/>
