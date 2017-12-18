@@ -24,8 +24,8 @@
                          HorizontalOptions="Center">
                 <Label Text="重量(kg)" 
                        FontSize="Large"/>
-                <Entry x:Name="Weight"
-                       Text="重量を入力してください"
+                <Entrycell x:Name="Weight" label="重量を入力してください"
+                       Text="                     "
                        WidthRequest="130"
                        />
             </StackLayout>
