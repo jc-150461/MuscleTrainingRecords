@@ -17,6 +17,7 @@
                      Android="0, 0, 0, 0"
                      WinPhone="0, 0, 0, 0" />
             </StackLayout.Margin>
+            
             <Picker x:Name="Sort" Title="並び替え"
                     SelectedIndexChanged="Sort_SelectedIndexChanged_1">
                 <Picker.Items>

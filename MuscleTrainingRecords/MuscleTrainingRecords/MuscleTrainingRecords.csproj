@@ -64,7 +64,6 @@
       <DependentUpon>TrainingLogPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TrainingLogPageCS.cs" />
-    <Compile Include="TraningCS.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
