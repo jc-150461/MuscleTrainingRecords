@@ -10,15 +10,13 @@ namespace MuscleTrainingRecords
 {
     public class TraningCS
     {
-        public class TrainingCS
-        {
-            public string Menu { get; set; }
-            public string Load { get; set; }
+        public string Menu { get; set; }
+        public string Load { get; set; }
 
-            public override string ToString()
-            {
-                return Menu + Load;
-            }
+        public override string ToString()
+        {
+            return Menu + Load;
         }
     }
 }
+
