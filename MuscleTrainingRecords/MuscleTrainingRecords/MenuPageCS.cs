@@ -26,10 +26,10 @@ namespace MuscleTrainingRecords
 
             InitializeComponent();
 
-            var training = new List<Training>
+            var training = new List<TrainingCS>
             {
-                new Training { Menu = "腕立て", Load = "☆☆" },
-                new Training { Menu = "腹筋", Load = "☆☆☆" },
+                new TrainingCS { Menu = "腕立て", Load = "☆☆" },
+                new TrainingCS { Menu = "腹筋", Load = "☆☆☆" },
             };
 
             // ListViewを生成する
@@ -141,9 +141,7 @@ namespace MuscleTrainingRecords
             }
         }
 
-        private void listView_ItemTapped_1(object sender, ItemTappedEventArgs e)
-        {
-            Navigation.PushAsync(new MenudetaliPage());
-        }
+       
+        
     }
 }
