@@ -10,7 +10,7 @@ namespace MuscleTrainingRecords
 {
     public class TraningCS
     {
-        public class Training
+        public class TrainingCS
         {
             public string Menu { get; set; }
             public string Load { get; set; }
