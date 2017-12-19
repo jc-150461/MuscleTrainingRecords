@@ -85,7 +85,8 @@
                        Text="　　   "
                        WidthRequest="200"
                        FontSize="100"
-                       TextColor="Orange"/>
+                       TextColor="Orange"
+                       />
 
 
                 <Label Text="kgです"
