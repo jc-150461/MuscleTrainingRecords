@@ -108,7 +108,7 @@ namespace MuscleTrainingRecords
 
         private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            Navigation.PushAsync(new MenudetaliPage());
+            Navigation.PushAsync(new MenudetailPageCS());
         }
 
 
