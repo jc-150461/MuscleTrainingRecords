@@ -17,7 +17,8 @@ namespace MuscleTrainingRecords
 					new Label {
                      Text = "Welcome to メニュー詳細Page!",
                      HorizontalOptions = LayoutOptions.Center,
-                    VerticalOptions = LayoutOptions.CenterAndExpand}
+                    VerticalOptions = LayoutOptions.CenterAndExpand
+                    }
 				}
 			};
 		}

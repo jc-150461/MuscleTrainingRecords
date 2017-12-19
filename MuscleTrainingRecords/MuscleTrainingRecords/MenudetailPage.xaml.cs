@@ -16,5 +16,10 @@ namespace MuscleTrainingRecords
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void 追加_Activated(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

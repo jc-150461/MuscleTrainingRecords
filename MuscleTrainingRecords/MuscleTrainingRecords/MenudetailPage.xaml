@@ -7,6 +7,7 @@
             <Label Text="Welcome to MenudetailPage!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <ToolbarItem  Name="追加" Activated="OnClick"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
