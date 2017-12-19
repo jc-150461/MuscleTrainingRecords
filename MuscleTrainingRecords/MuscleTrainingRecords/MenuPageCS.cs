@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace MuscleTrainingRecords
 {
-    public class MenuPageCS : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public  partial class MenuPageCS : ContentPage
     {
         public MenuPageCS()
         {
