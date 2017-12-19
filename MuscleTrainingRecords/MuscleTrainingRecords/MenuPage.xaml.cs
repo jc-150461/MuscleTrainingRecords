@@ -43,7 +43,7 @@ namespace MuscleTrainingRecords
         }
 
 
-        private void 全部_Clicked(object sender, EventArgs e, int[] array1)
+        private void 全部_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1, 5, 6 };
@@ -52,7 +52,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 腹_Clicked(object sender, EventArgs e, int[] array1)
+        private void 腹_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2 };
@@ -61,7 +61,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 腕_Clicked(object sender, EventArgs e, int[] array1)
+        private void 腕_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3 };
@@ -70,7 +70,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 背中_Clicked(object sender, EventArgs e, int[] array1)
+        private void 背中_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1 };
@@ -79,7 +79,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 胸_Clicked(object sender, EventArgs e, int[] array1)
+        private void 胸_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1, 5 };
@@ -88,7 +88,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 肩_Clicked(object sender, EventArgs e, int[] array1)
+        private void 肩_Clicked(object sender, EventArgs e)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 1, 5, 6 };
@@ -97,7 +97,7 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void 脚_Clicked(object sender, EventArgs e, int[] array1)
+        private void 脚_Clicked(object sender, EventArgs e1)
         {
             //配列に値を入れる
             int[] array1 = new int[] { 2, 3, 1 };
@@ -115,7 +115,8 @@ namespace MuscleTrainingRecords
             //if (si==0)
             if (si.Equals("五十音順"))
             {
-                array1 = array1.Sort();
+                // 配列に値を入れる
+                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
 
                 // ListViewを生成する
                 listView.ItemsSource = array1;
