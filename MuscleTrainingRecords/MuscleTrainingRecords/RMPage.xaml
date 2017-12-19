@@ -78,7 +78,8 @@
              </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center">
+                   VerticalOptions="Center"
+                         Spacing="30">
 
                 <Label x:Name="RM"
                        Text="　　   "
@@ -87,7 +88,7 @@
                        TextColor="Orange"/>
 
 
-                <Label Text="       kgです"
+                <Label Text="kgです"
                        FontSize="Large"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="CenterAndExpand"
