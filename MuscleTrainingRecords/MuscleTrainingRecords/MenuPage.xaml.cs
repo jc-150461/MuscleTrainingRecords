@@ -108,7 +108,7 @@ namespace MuscleTrainingRecords
 
 
 
-        private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
+        /*private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             //int s = Sort.SelectedIndex;
             String si = (String)Sort.SelectedItem;
@@ -129,6 +129,6 @@ namespace MuscleTrainingRecords
                 // ListViewを生成する
                 listView.ItemsSource = array1;
             }
-        }
+        }*/
     }
 }

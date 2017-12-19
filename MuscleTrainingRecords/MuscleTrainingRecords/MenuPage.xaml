@@ -18,6 +18,7 @@
                      WinPhone="0, 0, 0, 0" />
             </StackLayout.Margin>
             
+            <!--
             <Picker x:Name="Sort" Title="並び替え"
                     SelectedIndexChanged="Sort_SelectedIndexChanged_1">
                 <Picker.Items>
@@ -25,59 +26,74 @@
                     <x:String>負荷度</x:String>
                 </Picker.Items>
             </Picker>
+            -->
+            
 
             <SearchBar x:Name="Select" 
                            Placeholder = "入力してください"
-                           SearchButtonPressed="Select_SearchButtonPressed"/>
+                           SearchButtonPressed="Select_SearchButtonPressed"
+                      WidthRequest="250" />
+            <!---WidthRequest追加-->
 
 
-            <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal"
+                             BackgroundColor="CornflowerBlue"
+                             VerticalOptions="StartAndExpand"
+                             HorizontalOptions="StartAndExpand"
+                             >
 
 
-                <Button x:Name="全部"
+                <Button 
                         Text="全部"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="全部_Clicked"/>
-
-                <Button x:Name="腹"
+                        Clicked="全部_Clicked"
+                        TextColor="White"/>
+ 
+                <Button 
                         Text="腹"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="腹_Clicked"/>
+                        Clicked="腹_Clicked"
+                        TextColor="White"/>
 
 
-                <Button x:Name="腕"
+                <Button 
                         Text="腕"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="腕_Clicked"/>
+                        Clicked="腕_Clicked"
+                        TextColor="White"/>
 
 
-                <Button x:Name="背中"
+                <Button 
                         Text="背中"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="背中_Clicked"/>
+                        Clicked="背中_Clicked"
+                         TextColor="White"/>
 
 
-                <Button x:Name="胸"
+                <Button 
                         Text="胸"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="胸_Clicked"/>
+                        Clicked="胸_Clicked"
+                        TextColor="White"/>
 
-                <Button x:Name="肩"
+                <Button 
                         Text="肩"
                         WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="肩_Clicked"/>
+                        Clicked="肩_Clicked"
+                         TextColor="White"/>
 
-                <Button x:Name="脚"
+                <Button 
                         Text="脚"
                          WidthRequest="70"
                         HeightRequest="15"
-                        Clicked="脚_Clicked"/>
+                        Clicked="脚_Clicked"
+                         TextColor="White"/>
 
 
             </StackLayout>
