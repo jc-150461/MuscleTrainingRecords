@@ -34,23 +34,26 @@
              FontFamily = "Poornut"
              FontSize = "20"
              HorizontalTextAlignment = "Center"
-             Placeholder = "入力してください" />
+             Placeholder = "入力してください" 
+                SearchButtonPressed="Select_SearchButtonPressed"/>
 
             <!---WidthRequest追加-->
 
 
                 <StackLayout Orientation="Horizontal"
                              BackgroundColor="CornflowerBlue"
-                             VerticalOptions="StartAndExpand"
+                             VerticalOptions="CenterAndExpand"
                              HorizontalOptions="StartAndExpand"
+                             HeightRequest="50"
+                             WidthRequest="100"
                              
                              >
 
 
                 <Button 
                         Text="全部"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                        
+                        
                         Clicked="全部_Clicked"
                         TextColor="White"
                     FontSize="Medium"
@@ -58,8 +61,7 @@
  
                 <Button 
                         Text="腹"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                       
                         Clicked="腹_Clicked"
                         TextColor="White"
                      FontSize="Medium"/>
@@ -67,8 +69,7 @@
 
                 <Button 
                         Text="腕"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                        
                         Clicked="腕_Clicked"
                         TextColor="White"
                      FontSize="Medium"/>
@@ -76,8 +77,7 @@
 
                 <Button 
                         Text="背中"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                        
                         Clicked="背中_Clicked"
                          TextColor="White"
                      FontSize="Medium"/>
@@ -85,24 +85,21 @@
 
                 <Button 
                         Text="胸"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                        
                         Clicked="胸_Clicked"
                         TextColor="White"
                      FontSize="Medium"/>
 
                 <Button 
                         Text="肩"
-                        WidthRequest="70"
-                        HeightRequest="15"
+                       
                         Clicked="肩_Clicked"
                          TextColor="White"
                      FontSize="Medium"/>
 
                 <Button 
                         Text="脚"
-                         WidthRequest="70"
-                        HeightRequest="15"
+                        
                         Clicked="脚_Clicked"
                          TextColor="White"
                      FontSize="Medium"/>
