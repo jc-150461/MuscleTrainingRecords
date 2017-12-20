@@ -106,10 +106,10 @@ namespace MuscleTrainingRecords
             listView.ItemsSource = array1;
         }
 
-        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+       /* private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Navigation.PopAsync(new MenudetailPage());
-        }
+        }*/
     }
 }
 
