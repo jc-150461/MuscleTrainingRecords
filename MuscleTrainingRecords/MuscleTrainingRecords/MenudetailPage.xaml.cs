@@ -9,17 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace MuscleTrainingRecords
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MenudetailPage : ContentPage
-	{
-		public MenudetailPage ()
-		{
-			InitializeComponent ();
-		}
-
-       /* private void 追加_Activated(object sender, EventArgs e)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MenudetailPage : ContentPage
+    {
+        public MenudetailPage()
         {
-            Navigation.PushAsync(new RecordPage());*/
+            InitializeComponent();
         }
+
+        /* private void 追加_Activated(object sender, EventArgs e)
+         {
+             Navigation.PushAsync(new RecordPage());*/
     }
 }
