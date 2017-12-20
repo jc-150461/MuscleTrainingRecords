@@ -17,9 +17,9 @@ namespace MuscleTrainingRecords
 			InitializeComponent ();
 		}
 
-        private void 追加_Activated(object sender, EventArgs e)
+       /* private void 追加_Activated(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new RecordPage());
+            Navigation.PushAsync(new RecordPage());*/
         }
     }
 }

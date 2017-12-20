@@ -8,7 +8,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <ToolbarItem  Name="追加" Activated="追加_Activated"/>
+          <!--  <ToolbarItem  Name="追加" Activated="追加_Activated"/> -->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
