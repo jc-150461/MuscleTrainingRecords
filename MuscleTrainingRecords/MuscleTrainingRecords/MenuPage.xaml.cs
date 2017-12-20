@@ -109,9 +109,9 @@ namespace MuscleTrainingRecords
         /*private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             Navigation.PopAsync(new MenudetailPageCS());*/
-        }
     }
 }
+
 
 
 
