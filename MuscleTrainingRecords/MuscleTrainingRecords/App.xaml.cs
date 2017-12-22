@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using SQLite;
 using Xamarin.Forms;
 
 namespace MuscleTrainingRecords
 {
     public partial class App : Application
     {
-        public App()
+
+        public static string dbPath; //データベースのパスを格納
+
+        public App(string dbPath)
         {
+            App.dbPath = dbPath; //AppのdbPathに引数のパスを指定
+
             InitializeComponent();
 
             MainPage = new MuscleTrainingRecords.MainPage();
