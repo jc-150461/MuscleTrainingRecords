@@ -57,7 +57,7 @@ namespace MuscleTrainingRecords
 
 
         /*******************セレクトメソッド**************************************/
-        public static List<MuscleModel> SelectMuscle()
+        public static List<MuscleModelCS> SelectMuscle()
         {
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
             {
