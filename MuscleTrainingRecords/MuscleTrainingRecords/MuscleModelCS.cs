@@ -42,9 +42,9 @@ namespace MuscleTrainingRecords
                 try
                 {
 
-                    db.CreateTable<MuscleModel>();
+                    db.CreateTable<MuscleModelCS>();
 
-                    db.Insert(new MuscleModel() { Tno = tno, Tname = Tname, Weight = Weight, Set = Set, Bweight = Bweight, Bfat = bfat, Date = date });
+                    db.Insert(new MuscleModelCS() { Tno = tno, Tname = Tname, Weight = Weight, Set = Set, Bweight = Bweight, Bfat = bfat, Date = date });
                     db.Commit();
                 }
                 catch (Exception e)
@@ -63,7 +63,7 @@ namespace MuscleTrainingRecords
             {
                 try
                 {
-                    return db.Query<MuscleModel>("SELECT * FROM[Muscle] ORDER BY [Date]");
+                    return db.Query<MuscleModelCS>("SELECT * FROM[Muscle] ORDER BY [Date]");
                 }
                 catch (Exception e)
                 {
@@ -79,9 +79,9 @@ namespace MuscleTrainingRecords
             {
                 try
                 {
-                    db.CreateTable<MuscleModel>();
+                    db.CreateTable<MuscleModelCS>();
 
-                    db.Delete<MuscleModel>(tno);
+                    db.Delete<MuscleModelCS>(tno);
                     db.Commit();
                 }
                 catch (Exception e)
@@ -101,9 +101,9 @@ namespace MuscleTrainingRecords
                 try
                 {
                     //データベースにFoodテーブルを作成する
-                    db.CreateTable<MuscleModel>();
+                    db.CreateTable<MuscleModelCS>();
 
-                    db.DeleteAll<MuscleModel>();
+                    db.DeleteAll<MuscleModelCS>();
                     db.Commit();
                 }
                 catch (Exception e)

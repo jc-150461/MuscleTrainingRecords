@@ -22,8 +22,8 @@ namespace MuscleTrainingRecords
 
         private void Insert_Clicked(object sender, EventArgs e)//保存(インサート)ボタンを押したとき
         {
-            MuscleModelCS.InsertMuscle(yyyymmdd.ToString(),Weight.Text, Reg.Text, Set.Text);
-            DisplayAlert("記録しました");
+            MuscleModelCS.InsertMuscle(yyyymmdd.ToString(),Weight.Text, Reg.Text);
+            //DisplayAlert("記録しました");
 
             Navigation.PushAsync(new RecordListPage());
 
