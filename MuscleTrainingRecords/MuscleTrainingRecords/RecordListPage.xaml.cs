@@ -18,18 +18,18 @@ namespace MuscleTrainingRecords
             var layout = new StackLayout { HorizontalOptions = LayoutOptions.Center, Margin = new Thickness { Top = 100 } };
 
             //Userテーブルに適当なデータを追加
-            MuscleMenuModelCS.InsertMenu("鈴木");
-            MuscleMenuModelCS.InsertMenu("田中");
-            MuscleMenuModelCS.InsertMenu("斎藤");
+            MuscleMenuModelCS.insertUser("鈴木");
+            MuscleMenuModelCS.insertUser("田中");
+            MuscleMenuModelCS.insertUser("斎藤");
 
             //Userテーブルの行データを取得
-            var query = MuscleMenuModelCS.SelectMenu();
+            var query = MuscleMenuModelCS.selectUser();
 
             foreach (var Menu in query)
             {
 
                 //Userテーブルの名前列をLabelに書き出します
-                layout.Children.Add(new Label { Text = Menu.Menu });
+                layout.Children.Add(new Label { Text = Menu.Name });
             }
 
             Content = layout;
