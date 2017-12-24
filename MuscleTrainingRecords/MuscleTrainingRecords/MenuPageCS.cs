@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace MuscleTrainingRecords
 {
-    /*[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPageCS : ContentPage
     {
         public MenuPageCS()
@@ -29,18 +29,6 @@ namespace MuscleTrainingRecords
             };
 
         }
-    }*/
-
-
-    public class MenuPageCS
-    {/*
-        public string Menu { get; set; }
-        public string Load { get; set; }
-
-        public override string ToString()
-        {
-            return Menu + Load;
-        }*/
     }
 }
 
