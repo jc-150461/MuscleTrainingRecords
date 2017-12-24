@@ -7,9 +7,9 @@ using System.Linq;
 
 namespace MuscleTrainingRecords
 {
-    [Table("Menu")]
+    //[Table("Menu")]
     class MuscleMenuModelCS
-    {
+    {/*
         [PrimaryKey, AutoIncrement]   //プライマリキー,自動で増える値　下に来るのが主キー
 
         public int ID { get; set; } //主キー ID列
@@ -24,7 +24,7 @@ namespace MuscleTrainingRecords
         /********************************インサートメソッド********************************/
 
 
-        public static void InsertMenu(int id, string menu, string commentary, string part)
+        /*public static void InsertMenu(int id, string menu, string commentary, string part)
         {
             //データベースに接続する
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
@@ -43,7 +43,6 @@ namespace MuscleTrainingRecords
                     System.Diagnostics.Debug.WriteLine(e);
                 }
             }
-        }
-
+        }*/
     }
 }
