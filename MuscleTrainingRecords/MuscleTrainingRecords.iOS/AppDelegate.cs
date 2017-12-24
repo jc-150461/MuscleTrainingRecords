@@ -4,7 +4,7 @@ using System;
 using Foundation;
 using UIKit;
 
-namespace SQLite11.iOS
+namespace MuscleTrainingRecords.iOS
 {
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
