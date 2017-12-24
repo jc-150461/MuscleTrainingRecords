@@ -38,7 +38,7 @@ namespace MuscleTrainingRecords.iOS
         }
     }
 }
-}
+
 /*
 using System;
 using System.Collections.Generic;
