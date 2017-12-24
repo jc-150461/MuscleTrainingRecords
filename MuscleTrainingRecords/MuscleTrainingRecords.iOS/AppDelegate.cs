@@ -1,11 +1,10 @@
-﻿/*
+﻿
 using System;
+
 using Foundation;
 using UIKit;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace MuscleTrainingRecords.iOS
+namespace SQLite11.iOS
 {
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
@@ -14,18 +13,18 @@ namespace MuscleTrainingRecords.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            //指定したファイルのパスを取得する。
+            //指定したファイルのパスを取得します。
             var dbPath = GetLocalFilePath("culculate.db3");
 
-            //この段階ではまだエラーになる。
+            //この段階ではまだエラーになります。
             LoadApplication(new App(dbPath));
+
 
             return base.FinishedLaunching(app, options);
         }
-
         public static string GetLocalFilePath(string filename)
         {
-            //指定されたファイルのパスを取得する。なければ作成してそのパスを返却する。
+            //指定されたファイルのパスを取得します。なければ作成してそのパスを返却します
             var docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             var libFolder = System.IO.Path.Combine(docFolder, "..", "Library", "Databases");
 
@@ -36,8 +35,10 @@ namespace MuscleTrainingRecords.iOS
 
             return System.IO.Path.Combine(libFolder, filename);
         }
+
     }
-}*/
+}
+/*
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,3 +73,4 @@ namespace MuscleTrainingRecords.iOS
     }
 }
 
+    */
