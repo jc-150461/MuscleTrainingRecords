@@ -6,13 +6,13 @@ namespace MuscleTrainingRecords
     public partial class App : Application
     {
         //データベースのパスを格納
-        public static string dbPath;
+        //public static string dbPath;
 
         //コンストラクタの引数にstring型の引数を追加
         public App(string dbPath)
         {
             //AppのdbPathに引数のパスを設定します
-            App.dbPath = dbPath;
+           // App.dbPath = dbPath;
 
             InitializeComponent();
 
