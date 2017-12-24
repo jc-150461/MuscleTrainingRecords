@@ -21,9 +21,6 @@ namespace MuscleTrainingRecords
             Navigation.PushAsync(new MenuPage());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new RecordPage());
-        }
+       
     }
 }

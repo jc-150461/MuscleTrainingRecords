@@ -116,25 +116,23 @@ namespace MuscleTrainingRecords
 
 
 
-        /*private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            //int s = Sort.SelectedIndex;
-            String si = (String)Sort.SelectedItem;
-            //if (si==0)
-            if (si.Equals("五十音順"))
-            {
-                // 配列に値を入れる
-                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
-
-                // ListViewを生成する
-                listView.ItemsSource = array1;
-            }
-            else
-            {
-                // 配列に値を入れる
-                int[] array1 = new int[] { 5, 4, 3, 2, 1 };
-
-                // ListViewを生成する
-                listView.ItemsSource = array1;
-            }
-        }*/
+/*private void Sort_SelectedIndexChanged_1(object sender, EventArgs e)
+{
+    //int s = Sort.SelectedIndex;
+    String si = (String)Sort.SelectedItem;
+    //if (si==0)
+    if (si.Equals("五十音順"))
+    {
+        // 配列に値を入れる
+        int[] array1 = new int[] { 5, 4, 3, 2, 1 };
+        // ListViewを生成する
+        listView.ItemsSource = array1;
+    }
+    else
+    {
+        // 配列に値を入れる
+        int[] array1 = new int[] { 5, 4, 3, 2, 1 };
+        // ListViewを生成する
+        listView.ItemsSource = array1;
+    }
+}*/
