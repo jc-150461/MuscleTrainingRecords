@@ -19,10 +19,10 @@ namespace MuscleTrainingRecords
 		{
 			InitializeComponent ();
 		}
-        /*
+        
         private void Insert_Clicked(object sender, EventArgs e)//保存(インサート)ボタンを押したとき
         {
-            MuscleModelCS.InsertMuscle(yyyymmdd.ToString(),Weight.Text, Reg.Text);
+           // MuscleModelCS.InsertMuscle(yyyymmdd.ToString(),Weight.Text, Reg.Text);
             //DisplayAlert("記録しました");
 
             Navigation.PushAsync(new RecordListPage());
@@ -32,9 +32,9 @@ namespace MuscleTrainingRecords
 
         private void DatePicker_DateSelected(object sender, DateChangedEventArgs e) //Dateピッカーで日付を選択したとき
         {
-            yyyymmdd = new DateTime(DatePicker.Date.Year, DatePicker.Date.Month, DatePicker.Date.Day);
-
+           // yyyymmdd = new DateTime(DatePicker.Date.Year, DatePicker.Date.Month, DatePicker.Date.Day);
+              Navigation.PushAsync(new RecordListPage());
         }
-        */
+        
     }
 }
