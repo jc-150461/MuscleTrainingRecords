@@ -7,7 +7,7 @@
                  Spacing="50">
 
             <Button Text="記録"
-                    Clicked="Button_Clicked"
+                    
                     FontSize="15"/>
             <Button Text="保存" 
                     x:Name="Insert"
@@ -30,12 +30,12 @@
                Text="日付                "
                FontSize="35"/>
 
-            <!---日付ピッカー-->
+            <!---日付ピッカー DateSelected="DatePicker_DateSelected"-->
             <DatePicker Format="D" VerticalOptions="Center"
                     WidthRequest="200"
                     HeightRequest="15"
                     x:Name="DatePicker"
-                    DateSelected="DatePicker_DateSelected"
+                   
                     IsEnabled="True"/>
 
         </StackLayout>

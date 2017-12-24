@@ -19,7 +19,7 @@ namespace MuscleTrainingRecords
 		{
 			InitializeComponent ();
 		}
-        
+        /*
         private void Insert_Clicked(object sender, EventArgs e)//保存(インサート)ボタンを押したとき
         {
            // MuscleModelCS.InsertMuscle(yyyymmdd.ToString(),Weight.Text, Reg.Text);
@@ -35,6 +35,7 @@ namespace MuscleTrainingRecords
            // yyyymmdd = new DateTime(DatePicker.Date.Year, DatePicker.Date.Month, DatePicker.Date.Day);
               Navigation.PushAsync(new RecordListPage());
         }
+        */
         
     }
 }
