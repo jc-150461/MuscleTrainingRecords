@@ -29,7 +29,7 @@ namespace MuscleTrainingRecords
             };
 
         }
-    }*/
+    }
 
 
     public class MenuPageCS
@@ -41,8 +41,9 @@ namespace MuscleTrainingRecords
         {
             return Menu + Load;
         }
-    }
+    }*/
 }
+
 
 
            
