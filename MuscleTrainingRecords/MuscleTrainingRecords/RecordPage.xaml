@@ -6,101 +6,88 @@
         <StackLayout Orientation="Vertical"
                  Spacing="50">
 
+            <!--= <StackLayout Orientation="Horizontal">
+            
             <Button Text="記録"
-                    
+                    Clicked="Button_Clicked"
                     FontSize="15"/>
             <Button Text="保存" 
-                    x:Name="Insert"
-                    
+                    Clicked="Button_Clicked"
                     HorizontalOptions="EndAndExpand"
                     FontSize="15"/>
-            
-        </StackLayout> 
+        </StackLayout> -->
 
-        <Label x:Name="label1"
+            <Label x:Name="label1"
                Text=" "
                HorizontalOptions="Center"
                FontSize="35"/>
 
-        <BoxView BackgroundColor="Black"
+            <BoxView BackgroundColor="Black"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
-        <StackLayout Orientation="Horizontal">
-            <Label x:Name="labelC"
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="labelC"
                Text="日付                "
                FontSize="35"/>
 
-            <!---日付ピッカー DateSelected="DatePicker_DateSelected"-->
-            <DatePicker Format="D" VerticalOptions="Center"
+                <DatePicker Format="D" VerticalOptions="Center"
                     WidthRequest="200"
-                    HeightRequest="15"
-                    x:Name="DatePicker"
-                   
-                    IsEnabled="True"/>
+                    HeightRequest="15"/>
+            </StackLayout>
 
-        </StackLayout>
-
-        <BoxView BackgroundColor="Black"
+            <BoxView BackgroundColor="Black"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
 
-        <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
 
-            <Label x:Name="label2"
+                <Label x:Name="label2"
                Text="重量(kg)            "
                FontSize="35"/>
-            <!---重量text-->
-            <Entry HorizontalOptions="Center"
+
+                <Entry HorizontalOptions="Center"
                    WidthRequest="130"
                    HeightRequest="15"
                    Keyboard ="Numeric"
                    PlaceholderColor="White"
-                   x:Name="Weight"
                    />
 
 
-            <Label x:Name="KG"
+                <Label x:Name="KG"
                    Text="kg"
                    FontSize="35"/>
-        </StackLayout>
+            </StackLayout>
 
-        <BoxView BackgroundColor="Black"
+            <BoxView BackgroundColor="Black"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
 
-        <StackLayout Orientation="Horizontal">
-            <Label x:Name="label3"
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="label3"
                Text="レッグ(回数)      "
                FontSize="35"/>
-            <!---回数-->
-            <Entry HorizontalOptions="End"
+
+                <Entry HorizontalOptions="End"
                    WidthRequest="130"
                    HeightRequest="15"
-                   Keyboard ="Numeric"
-                   x:Name="Reg"
-                   
-                  />
+                   Keyboard ="Numeric"/>
 
-        </StackLayout>
+            </StackLayout>
 
-        <BoxView BackgroundColor="Black"
+            <BoxView BackgroundColor="Black"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
 
-        <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
 
-            <Label x:Name="label4"
+                <Label x:Name="label4"
                Text="セット数            "
                FontSize="35"/>
-            <!---set-->
-            <Entry WidthRequest="130"
+
+                <Entry WidthRequest="130"
                    HeightRequest="25"
-                   Keyboard ="Numeric"
-                   x:Name="Set"/>
+                   Keyboard ="Numeric" />
 
-
-
-
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
