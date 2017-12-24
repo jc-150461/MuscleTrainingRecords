@@ -23,6 +23,7 @@ namespace MuscleTrainingRecords.iOS
             return base.FinishedLaunching(app, options);
         }
 
+
         public static string GetLocalFilePath(string filename)
         {
             //指定されたファイルのパスを取得する。なければ作成してそのパスを返却する。
