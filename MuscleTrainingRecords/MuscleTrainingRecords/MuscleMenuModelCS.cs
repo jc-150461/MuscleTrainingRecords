@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using SQLite;
 using System.Linq;
+using SQLitePCL;
 
 
 
 namespace MuscleTrainingRecords
 {
     [Table("Menu")]
-    public partial class MuscleMenuModelCS
+    public  class MuscleMenuModelCS
     {
         [PrimaryKey, AutoIncrement]   //プライマリキー,自動で増える値　下に来るのが主キー
 
@@ -24,7 +25,7 @@ namespace MuscleTrainingRecords
         /********************************インサートメソッド********************************/
 
 
-        public static void InsertMenu(int id, string menu, string commentary, string part)
+        public static void InsertMenu( string menu)
         {
             //データベースに接続する
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
@@ -34,13 +35,31 @@ namespace MuscleTrainingRecords
                     //データベースにStockテーブルを作成する
                     db.CreateTable<MuscleMenuModelCS>();
 
-                    db.Insert(new MuscleMenuModelCS() { ID = id, Menu = menu, Commentary = commentary, Part = part });
+                    db.Insert(new MuscleMenuModelCS() {  Menu = menu});
                     db.Commit();
                 }
                 catch (Exception e)
                 {
                     db.Rollback();
                     System.Diagnostics.Debug.WriteLine(e);
+                }
+            }
+        }
+        public static List<MuscleMenuModelCS> SelectMenu()
+        {
+            using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
+            {
+                try
+                {
+                    //データベースに指定したSQLを発行
+                    return db.Query<MuscleMenuModelCS>("SELECT * FROM [Menu] ORDER BY [ID]");
+
+                }
+                catch (Exception e)
+                {
+
+                    System.Diagnostics.Debug.WriteLine(e);
+                    return null;
                 }
             }
         }
