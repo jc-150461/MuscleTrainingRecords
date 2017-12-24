@@ -15,7 +15,7 @@ namespace MuscleTrainingRecords
         public RecordListPage()
         {
             InitializeComponent();
-            var layout = new StackLayout { HorizontalOptions = LayoutOptions.Center, Margin = new Thickness { Top = 100 } };
+            /*var layout = new StackLayout { HorizontalOptions = LayoutOptions.Center, Margin = new Thickness { Top = 100 } };
 
             //Userテーブルに適当なデータを追加
             MuscleMenuModelCS.insertUser("鈴木");
@@ -32,7 +32,7 @@ namespace MuscleTrainingRecords
                 layout.Children.Add(new Label { Text = Menu.Name });
             }
 
-            Content = layout;
+            Content = layout;*/
         }
         private void RecordListButton(object sender, EventArgs e)
         {
