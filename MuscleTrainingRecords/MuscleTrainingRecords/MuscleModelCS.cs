@@ -44,7 +44,7 @@ namespace MuscleTrainingRecords
 
                     db.CreateTable<MuscleModelCS>();
 
-                    db.Insert(new MuscleModelCS() { Tno = tno, Tname = Tname, Weight = Weight, Set = Set, Bweight = Bweight, Bfat = bfat, Date = date });
+                    db.Insert(new MuscleModelCS() { Tno = tno, Tname = tname, Weight = weight, Set = set, Bweight = bweight, Bfat = bfat, Date = date });
                     db.Commit();
                 }
                 catch (Exception e)
@@ -73,7 +73,7 @@ namespace MuscleTrainingRecords
             }
         }
 
-        public static void DeleteStock(int s_no)
+        public static void DeleteMuscle(int s_no)
         {
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
             {
