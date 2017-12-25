@@ -17,7 +17,7 @@ namespace MuscleTrainingRecords
         {
             DataPoint[] itemList = getItemList();
 
-            this.Model = new PlotModel { Title = "LineChart" };
+            this.Model = new PlotModel { Title = "" };
 
             var X_line = new LineSeries() { Title = "体重" };
             X_line.Color = OxyColors.Red;

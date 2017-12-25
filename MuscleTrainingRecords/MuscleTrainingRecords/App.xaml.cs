@@ -9,10 +9,12 @@ namespace MuscleTrainingRecords
 {
     public partial class App : Application
     {
-      
-            public App()
+        public static string dbPath;
+
+        public App(string dbPath)
             {
-                InitializeComponent();
+            App.dbPath = dbPath;
+            InitializeComponent();
                 MainPage = new MuscleTrainingRecords.MainPage();
         }
 
