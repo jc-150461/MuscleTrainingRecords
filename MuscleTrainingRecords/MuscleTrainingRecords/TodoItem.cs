@@ -9,9 +9,9 @@ namespace MuscleTrainingRecords
 {
     public class TodoItem
     {
-        [PrimaryKey, AutoIncrement] //主キー
+        [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public DateTime Created { get; set; }　//日
+        public DateTime Created { get; set; }
         public string Name { get; set; }
         public string Notes { get; set; }
         public bool Done { get; set; }

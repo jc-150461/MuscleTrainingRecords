@@ -10,15 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace MuscleTrainingRecords
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MenudetailPage : ContentPage
+    public partial class TabbedPage1 : TabbedPage
     {
-        public MenudetailPage()
+        public TabbedPage1 ()
         {
             InitializeComponent();
-        }
 
-        /* private void 追加_Activated(object sender, EventArgs e)
-         {
-             Navigation.PushAsync(new RecordPage());*/
+            Children.Add(new MainPage());
+            Children.Add(new MainPage2());
+            Children.Add(new InsertPage());
+            Children.Add(new Page1());
+        }
     }
 }

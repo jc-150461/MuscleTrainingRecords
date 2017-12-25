@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using SQLite;
 
 using Xamarin.Forms;
+
 namespace MuscleTrainingRecords
 {
     public class TodoItemDatabase

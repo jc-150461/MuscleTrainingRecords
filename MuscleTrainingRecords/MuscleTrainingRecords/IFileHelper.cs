@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace MuscleTrainingRecords
 {
     // https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/databases/
-
     public interface IFileHelper
     {
         string GetLocalFilePath(string filename);

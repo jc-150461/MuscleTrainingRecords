@@ -1,26 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
 
 namespace MuscleTrainingRecords
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GraphPage : ContentPage
-	{
-
-
-		public GraphPage ()
-		{
-			InitializeComponent ();
-		}
-
-
-        /********************ここから追加******************************************/
+    public partial class InsertPage : ContentPage
+    {
+        public InsertPage()
+        {
+            InitializeComponent();
+        }
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
@@ -34,7 +25,7 @@ namespace MuscleTrainingRecords
             TodoItem item = new TodoItem() { Name = sName, Notes = sNotes, Done = bDone, Count = iCount, Created = dCreated };
             db.SaveItemAsync(item);
             DisplayAlert("TodoItem", "追加されたよ", "OK");
-            Application.Current.MainPage = new MainPage();
+            Application.Current.MainPage = new TabbedPage1();
         }
     }
 }
