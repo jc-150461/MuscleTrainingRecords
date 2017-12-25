@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace MuscleTrainingRecords
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page1 : ContentPage
-	{
-		public Page1 ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class RecordPage : ContentPage
+    {
+        public RecordPage()
+        {
+            InitializeComponent();
+        }
+    }
 }
