@@ -13,16 +13,16 @@ namespace MuscleTrainingRecords
     {
         public PlotModel Model { get; private set; }
 
-        public  LineChart()
+        public LineChart()
         {
-             DataPoint[] itemList = getItemList();
-            
-             this.Model = new PlotModel { Title = "LineChart" };
+            DataPoint[] itemList = getItemList();
 
-             var X_line = new LineSeries();
-             X_line.Color = OxyColors.Red;
+            this.Model = new PlotModel { Title = "LineChart" };
 
-            var Y_line = new LineSeries();
+            var X_line = new LineSeries() { Title = "体重" };
+            X_line.Color = OxyColors.Red;
+
+            var Y_line = new LineSeries() { Title = "体脂肪" };
             Y_line.Color = OxyColors.Blue;
            
             foreach (DataPoint dp in itemList)
@@ -37,11 +37,12 @@ namespace MuscleTrainingRecords
             }
 
             X_line.Points.Add(new DataPoint(3, 3));
-        Model.Series.Add(X_line);
-
-        var axisY = new LinearAxis()
+            Model.Series.Add(Y_line);
+            Model.Series.Add(X_line);
+            
+        var axisY = new LinearAxis() //横
         {
-            Title = "datas",
+            
             IsZoomEnabled = false,
             Position = AxisPosition.Left,
             Maximum = 150,
