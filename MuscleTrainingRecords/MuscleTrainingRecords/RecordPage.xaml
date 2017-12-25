@@ -6,16 +6,12 @@
         <StackLayout Orientation="Vertical"
                  Spacing="50">
 
-            <!--= <StackLayout Orientation="Horizontal">
-            
-            <Button Text="記録"
-                    Clicked="Button_Clicked"
-                    FontSize="15"/>
+           
             <Button Text="保存" 
-                    Clicked="Button_Clicked"
+                    Clicked="Insert_Clicked"
                     HorizontalOptions="EndAndExpand"
                     FontSize="15"/>
-        </StackLayout> -->
+        
 
             <Label x:Name="label1"
                Text=" "
@@ -32,7 +28,9 @@
 
                 <DatePicker Format="D" VerticalOptions="Center"
                     WidthRequest="200"
-                    HeightRequest="15"/>
+                    HeightRequest="15"
+                    DateSelected="DatePicker_DateSelected"
+                            x:Name="DatePicker"/>
             </StackLayout>
 
             <BoxView BackgroundColor="Black"
@@ -50,6 +48,7 @@
                    HeightRequest="15"
                    Keyboard ="Numeric"
                    PlaceholderColor="White"
+                   x:Name="Weight"
                    />
 
 
@@ -70,7 +69,8 @@
                 <Entry HorizontalOptions="End"
                    WidthRequest="130"
                    HeightRequest="15"
-                   Keyboard ="Numeric"/>
+                   Keyboard ="Numeric"
+                   x:Name="Leg"/>
 
             </StackLayout>
 
@@ -86,7 +86,8 @@
 
                 <Entry WidthRequest="130"
                    HeightRequest="25"
-                   Keyboard ="Numeric" />
+                   Keyboard ="Numeric" 
+                       x:Name="Set"/>
 
             </StackLayout>
         </StackLayout>
