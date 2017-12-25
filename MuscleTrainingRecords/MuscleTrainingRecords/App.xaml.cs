@@ -5,17 +5,11 @@ namespace MuscleTrainingRecords
 {
     public partial class App : Application
     {
-        //データベースのパスを格納
-        public static string dbPath;
-
-        public App(string dbPath)
-        {
-            //AppのdbPathに引数のパスを設定
-            App.dbPath = dbPath;
-
-            InitializeComponent();
-
-            MainPage = new MuscleTrainingRecords.MainPage();
+      
+            public App()
+            {
+                InitializeComponent();
+                MainPage = new MuscleTrainingRecords.MainPage();
         }
 
         protected override void OnStart()
@@ -32,6 +26,24 @@ namespace MuscleTrainingRecords
         {
             // Handle when your app resumes
         }
+
+        static TodoItemDatabase database;
+
+
+        public static TodoItemDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                }
+                return database;
+            }
+        }
+
+        public int ResumeAtTodoId { get; set; }
+
     }
 }
 
