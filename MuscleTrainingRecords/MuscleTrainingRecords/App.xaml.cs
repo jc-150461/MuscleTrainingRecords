@@ -13,7 +13,7 @@ namespace MuscleTrainingRecords
             public App()
             {
                 InitializeComponent();
-                MainPage = new MuscleTrainingRecords.TabbedPage1();
+                MainPage = new MuscleTrainingRecords.MainPage();
         }
 
         protected override void OnStart()
