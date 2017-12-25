@@ -16,8 +16,7 @@ namespace MuscleTrainingRecords
         {
             InitializeComponent();
 
-            Children.Add(new MainPage());
-            Children.Add(new MainPage2());
+           
             Children.Add(new InsertPage());
             Children.Add(new Page1());
         }
