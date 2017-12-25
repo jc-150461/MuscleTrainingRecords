@@ -12,7 +12,7 @@ namespace MuscleTrainingRecords
     class RecordsModel
     {
         [PrimaryKey, AutoIncrement, Column("_id")]
-        public string M_no { get; set; } //筋トレNo 主キー
+        public string M_no { get; set; } //筋トレNo 主キー  全部 int →string　 
 
         public string M_weight { get; set; } //重量
 
@@ -112,7 +112,7 @@ namespace MuscleTrainingRecords
         }
 
         /********************アップデートメソッド（日付）*************************************/
-        public static void UpdateF_date(int m_no, int m_weight, int m_leg, int m_set, DateTime m_date)
+        public static void UpdateF_date(string m_no, string m_weight, string m_leg, string m_set, DateTime m_date)
         {
             //データベースに接続する
             using (SQLiteConnection db = new SQLiteConnection(App.dbPath))
