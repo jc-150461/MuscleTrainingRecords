@@ -34,7 +34,7 @@ namespace MuscleTrainingRecords
             TodoItem item = new TodoItem() { Name = sName, Notes = sNotes, Done = bDone, Count = iCount, Created = dCreated };
             db.SaveItemAsync(item);
             DisplayAlert("TodoItem", "追加されたよ", "OK");
-            //Application.Current.MainPage = new TabbedPage1();
+            Application.Current.MainPage = new MainPage();
         }
     }
 }
