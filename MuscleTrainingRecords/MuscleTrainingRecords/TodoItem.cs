@@ -17,5 +17,7 @@ namespace MuscleTrainingRecords
         public bool Done { get; set; }
         public int Bweight { get; set; }
         public int Bfat { get; set; }
+
+        
     }
 }

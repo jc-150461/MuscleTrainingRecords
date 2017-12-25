@@ -27,12 +27,12 @@ namespace MuscleTrainingRecords
             var db = TodoItemDatabase.getDatabase();
             //String sName = eName.Text;
             //String sNotes = eNotes.Text;
-            Boolean bDone = eDone.IsToggled;
+            //Boolean bDone = eDone.IsToggled;
             int B_Weight = int.Parse(bWeight.Text);
             int B_Fat = int.Parse(bFat.Text);
             DateTime dCreated = eCreated.Date;
 
-            TodoItem item = new TodoItem() { Done = bDone, Bweight = B_Weight, Created = dCreated, Bfat = B_Fat };
+            TodoItem item = new TodoItem() {  Bweight = B_Weight, Created = dCreated, Bfat = B_Fat };
             db.SaveItemAsync(item);
             DisplayAlert("TodoItem", "追加されたよ", "OK");
             Application.Current.MainPage = new MainPage();
