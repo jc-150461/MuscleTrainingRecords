@@ -16,18 +16,27 @@ namespace MuscleTrainingRecords
         public  LineChart()
         {
              DataPoint[] itemList = getItemList();
-
+            
              this.Model = new PlotModel { Title = "LineChart" };
 
              var X_line = new LineSeries();
              X_line.Color = OxyColors.Red;
+
+            var Y_line = new LineSeries();
+            Y_line.Color = OxyColors.Blue;
+           
             foreach (DataPoint dp in itemList)
         {
                 X_line.Points.Add(dp);
 
         }
+            foreach (DataPoint dp in itemList)
+            {
+                Y_line.Points.Add(dp);
 
-        X_line.Points.Add(new DataPoint(3, 3));
+            }
+
+            X_line.Points.Add(new DataPoint(3, 3));
         Model.Series.Add(X_line);
 
         var axisY = new LinearAxis()
@@ -56,7 +65,7 @@ namespace MuscleTrainingRecords
         int i = 0;
         foreach (TodoItem item in itemList)
         {
-            points[i++] = new DataPoint(item.ID, item.Count);
+            points[i++] = new DataPoint(item.ID, item.Bweight);
         }
         return points;
     }
