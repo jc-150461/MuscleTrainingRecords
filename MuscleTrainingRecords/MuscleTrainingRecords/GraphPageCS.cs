@@ -17,6 +17,7 @@ namespace MuscleTrainingRecords
             {
                 Children = {
                     new Label {
+
                         Text = "Welcome to GraphPage!",
                         HorizontalOptions = LayoutOptions.Center,
                         VerticalOptions = LayoutOptions.CenterAndExpand
