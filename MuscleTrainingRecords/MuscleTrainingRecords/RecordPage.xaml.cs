@@ -1,45 +1,4 @@
-﻿/*using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace MuscleTrainingRecords
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RecordPage : ContentPage
-    {
-
-        DateTime yyyymmdd;
-
-        public RecordPage()
-        {
-            InitializeComponent();
-        }
-
-
-        private void Insert_Clicked(object sender, EventArgs e)
-        {
-            RecordsModel.InsertRecords(weight.Text, Leg.Text,Set.Text, yyyymmdd);//試し
-
-            DisplayAlert("", "保存されました", "OK");
-
-            Navigation.PushAsync(new RecordListPage());
-
-
-        }
-
-        private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
-        {
-            yyyymmdd = new DateTime(DatePicker.Date.Year, DatePicker.Date.Month, DatePicker.Date.Day);
-
-           
-        }
-    }
-}*/
+﻿
 
 using System;
 using System.Collections.Generic;
