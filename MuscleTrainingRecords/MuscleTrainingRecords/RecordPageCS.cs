@@ -15,6 +15,7 @@ namespace MuscleTrainingRecords
             {
                 Children = {
                     new Label { Text = "Welcome to Xamarin.Forms!" }
+
                 }
             };
         }
